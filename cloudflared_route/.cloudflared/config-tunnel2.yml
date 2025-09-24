@@ -1,0 +1,14 @@
+tunnel: tunnel-2
+credentials-file: /root/.cloudflared/0fb33741-84bb-415d-9ef5-c45d5191b222.json
+
+ingress:
+  - hostname: alpha-tunnel2.kelompokmatahari.site
+    service: http://localhost:8000
+
+  - hostname: beta-tunnel2.kelompokmatahari.site
+    service: http://localhost:9000
+
+  - hostname: gamma-tunnel2.kelompokmatahari.site
+    service: http://localhost:10000
+
+  - service: http_status:404

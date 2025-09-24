@@ -1,0 +1,31 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+
+# Model files (ukuran besar)
+*.pt
+*.pth
+*.safetensors
+*.ckpt
+*.bin
+*.weights
+
+# ComfyUI specific
+models/
+input/
+output/
+temp/
+user/
+
+# System files
+.DS_Store
+Thumbs.db
+*.log
+
+# Large files
+*.zip
+*.tar.gz
+*.rar

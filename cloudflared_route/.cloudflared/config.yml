@@ -1,0 +1,10 @@
+tunnel: python-app
+credentials-file: /root/.cloudflared/628a39aa-e322-42c3-b07c-142e344e2524.json
+
+ingress:
+  - hostname: kelompokmatahari.site
+    service: http://localhost:5000
+  - service: http_status:404
+
+# Tambahkan token langsung
+token: eyJhIjoiOTA3MGI2MzY2NWRlOTRmMjIwYTZmYjc0YWY2NzhkYmIiLCJzIjoiczV2Z1FSWTNyT2cweEhlUi9CcjlKM3k1R3k1OUhST2VRMHMrRzZteUR1az0iLCJ0IjoiNjI4YTM5YWEtZTMyMi00MmMzLWIwN2MtMTQyZTM0NGUyNTI0In0=

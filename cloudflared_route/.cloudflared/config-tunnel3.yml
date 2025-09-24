@@ -1,0 +1,14 @@
+tunnel: tunnel-3
+credentials-file: /root/.cloudflared/4af116fd-6e77-4540-a29b-8b7353887cf2.json
+
+ingress:
+  - hostname: red-tunnel3.kelompokmatahari.site
+    service: http://localhost:11000
+
+  - hostname: blue-tunnel3.kelompokmatahari.site
+    service: http://localhost:12000
+
+  - hostname: green-tunnel3.kelompokmatahari.site
+    service: http://localhost:13000
+
+  - service: http_status:404
